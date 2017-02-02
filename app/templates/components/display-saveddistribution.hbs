@@ -1,0 +1,12 @@
+
+<div class="container text-center">
+  <li>
+  {{distribution.code}}
+  {{distribution.details}}
+
+  {{!-- {{update-distribution  distribution=distribution updateDistribution="updateDistribution"}} --}}
+  </li>
+{{!-- render update-distribution Component form display-saveddistribution --}}
+
+  <button {{action 'destroyDistribution' distribution}}>Delete</button>
+</div>

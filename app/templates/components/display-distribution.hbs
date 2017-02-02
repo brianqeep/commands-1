@@ -1,0 +1,12 @@
+<div class="row">
+ <h3>Solutions to <span class="styleheading">{{category.category}}</span></h3>
+</div>
+  <div class="row">
+    <ul>
+      {{#each category.distributions as |distribution|}}
+        {{display-saveddistribution distribution=distribution destroyDistribution="destroyDistribution" updateDistribution="updateDistribution"}}
+        {{!-- {{update-distribution distribution=distribution updateDistribution="updateDistribution"}} --}}
+      {{/each}}
+    </ul>
+
+  </div>
